@@ -1,0 +1,4 @@
+Can we assign a particular number to any item? Like vanilla is 1 so 1 comes whenever there is vanilla
+
+what to do if we want to give random numbers
+
