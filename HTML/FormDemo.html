@@ -10,7 +10,7 @@
     <section>
         <h1>Registration Form</h1>
 
-        <form action="Success.html">
+        <form action="Success.html" onsubmit="test()">
             <!-- text field-->
             <label for="fname">First Name:</label>
             <input id="fname" name="myName" pattern="[A-Za-z]*" required>
@@ -39,17 +39,38 @@
             <small>Password should be min 8 chars long</small> -->
             <input type="text"  id="pass" pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}">
             <label for="confirmpass">Confirm Password: </label>
-            <input type="password"  id="confirmpass" >
+            <input type="password"  id="confirmpass" required>
             <label for="birthdate">Birthdate: </label>
             <input type="datetime-local"  id="birthdate" >
             <label for="jmonth">Joining Month: </label>
             <input type="month"  id="jmonth" >
-            <!-- age : number, emaild id : email, username : text, password : password, confirm password : password
-            contact number : tel, birthdate : datetime-local,  joined-month : month-->
-
+            <section>
+                <label>Choose Interested Course:</label><br>
+                <label><input type="checkbox" id="ch1" name="course" value="java">:JAVA</label>
+                <label><input type="checkbox" id="ch2" name="course"  value="web" checked required>:WEB BASICS</label>
+                <label><input type="checkbox" id="ch3" name="course"  value="angular">:ANGULAR</label>
+                <label><input type="checkbox" id="ch4" name="course"  value="react">:REACT</label>
+            </section>
+            <section>
+                <label>Choose Gender:</label><br>
+               <label> <input type="radio" id="r1" name="gender" value="male">:MALE</label>
+               <label> <input type="radio" id="r2" name="gender" value="female">:FEMALE</label>
+            </section>
+            <label>Address:</label><br>
+            <textarea rows="10" cols="30"></textarea>
+            <label>Where you want to attend the course:</label>
+            <select id="location" name="loc">
+                <option value="dadar">DADAR</option>
+                <option value="rabale">RABALE</option>
+            </select>
             <input type="submit" value="REGISTER">
+            <input type="image" src="MyImages/star.jpg" height="50" width="100">
             <input type="reset">
+            <button>SUBMIT FORM</button>
+            <input type="button" value="SUBMIT USER FORM">
         </form>
+
+        <input type="color" id="myColor"><label>:Choose Label</label>
     </section>
 <!-- -->
     <script>
@@ -57,6 +78,9 @@
         let firstName=fnameField.value;
         let nameNode=document.getElementsByName('myName');
        
+        function test(){
+            window.alert("Form Submitted");
+        }
     </script>
 </body>
 </html>
