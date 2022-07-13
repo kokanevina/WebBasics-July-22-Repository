@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <section>
+        <h1>Registration Form</h1>
+
+        <form>
+            <!-- text field-->
+            <label for="fname">First Name:</label>
+            <input id="fname" name="myName">
+            <label for="lname">Last Name:</label>
+            <input type="text" placeholder="Last Name" id="lname" name="myName">
+            <label for="company">Company Name:</label>
+            <input type="text"  id="company" name="company" value="neosoft">
+            <label for="loc">Work Location: </label>
+            <input type="text"  id="loc" name="location" value="Dadar" readonly>
+            <!-- age : number, emaild id : email, username : text, password : password, confirm password : password
+            contact number : tel, birthdate : datetime-local,  joined-month : month-->
+
+            
+        </form>
+    </section>
+<!-- required, min, max, minlength, maxlength, pattern-->
+    <script>
+        let fnameField=document.getElementById('fname')
+        let firstName=fnameField.value;
+        let nameNode=document.getElementsByName('myName');
+        // for loop then extract the value from nodes
+        let array=document.getElementsByClassName('nation')
+    </script>
+</body>
+</html>
