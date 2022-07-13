@@ -10,29 +10,53 @@
     <section>
         <h1>Registration Form</h1>
 
-        <form>
+        <form action="Success.html">
             <!-- text field-->
             <label for="fname">First Name:</label>
-            <input id="fname" name="myName">
+            <input id="fname" name="myName" pattern="[A-Za-z]*" required>
             <label for="lname">Last Name:</label>
             <input type="text" placeholder="Last Name" id="lname" name="myName">
             <label for="company">Company Name:</label>
-            <input type="text"  id="company" name="company" value="neosoft">
+            <input type="text"  id="company" name="company" value="neosoft" required> 
             <label for="loc">Work Location: </label>
             <input type="text"  id="loc" name="location" value="Dadar" readonly>
+            <label for="age">Age: </label>
+            <input type="number"  id="age" min="20" max="60" required>
+            <label for="contact">Mobile Number: </label>
+            <input id="contact" pattern="[0-9]{10}" required  type="tel" >
+            <label for="mail">Email Id: </label>
+            <input type="email"  id="mail" required>
+            <label for="uname">Set Username: </label>
+            <input type="text"  id="uname" minlength="3" maxlength="10" required>
+            <label for="pass">Set Password: </label>
+           <!--  <label><small>Password must contain atleast one</small></label>
+            <ol style="font-size: 10px;">
+                <li>Capital Letter</li>
+                <li>Small Letter</li>
+                <li>Digit</li>
+                <li>Special Symbol</li>
+            </ol>
+            <small>Password should be min 8 chars long</small> -->
+            <input type="text"  id="pass" pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}">
+            <label for="confirmpass">Confirm Password: </label>
+            <input type="password"  id="confirmpass" >
+            <label for="birthdate">Birthdate: </label>
+            <input type="datetime-local"  id="birthdate" >
+            <label for="jmonth">Joining Month: </label>
+            <input type="month"  id="jmonth" >
             <!-- age : number, emaild id : email, username : text, password : password, confirm password : password
             contact number : tel, birthdate : datetime-local,  joined-month : month-->
 
-            
+            <input type="submit" value="REGISTER">
+            <input type="reset">
         </form>
     </section>
-<!-- required, min, max, minlength, maxlength, pattern-->
+<!-- -->
     <script>
         let fnameField=document.getElementById('fname')
         let firstName=fnameField.value;
         let nameNode=document.getElementsByName('myName');
-        // for loop then extract the value from nodes
-        let array=document.getElementsByClassName('nation')
+       
     </script>
 </body>
 </html>
