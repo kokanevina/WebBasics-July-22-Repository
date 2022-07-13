@@ -5,3 +5,4 @@ what to do if we want to give random numbers
 
 target values other than predefined
 
+picture : if source is not getting loaded, it will check next source, img tag in the end
