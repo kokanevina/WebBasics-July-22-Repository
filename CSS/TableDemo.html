@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Demo</title>
+</head>
+<body>
+    <table border="5">
+        <caption>Employee Information</caption>
+        <thead>
+            <tr><th>ID</th><th>NAME</th><th>DEPARTMENT</th><th>POSITION</th></tr>      
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Kavita</td><td>IT</td><td>Manager</td></tr>
+            <tr><td>4</td><td>Rana</td><td>HR</td><td>Manager</td></tr>
+            <tr><td>8</td><td>Pravin</td><td>Marketting</td><td>Sales Rep</td></tr>
+            <tr><td>9</td><td>Sophia</td><td>Marketting</td><td>Sales Rep</td></tr>
+            <tr><td>10</td><td>Yusuf</td><td>IT</td><td>Technician</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><td colspan="4"><small>Note : This contains only specific employee details</small></td></tr>
+        </tfoot>
+    </table>
+    <table border="5" style="border-collapse: collapse;">
+        <caption>Employee Information</caption>
+        <thead>
+            <tr><th>ID</th><th>NAME</th><th>DEPARTMENT</th><th>POSITION</th></tr>      
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Kavita</td><td>IT</td><td>Manager</td></tr>
+            <tr><td>4</td><td>Rana</td><td>HR</td><td>Manager</td></tr>
+            <tr><td>8</td><td>Pravin</td><td>Marketting</td><td>Sales Rep</td></tr>
+            <tr><td>9</td><td>Sophia</td><td>Marketting</td><td>Sales Rep</td></tr>
+            <tr><td>10</td><td>Yusuf</td><td>IT</td><td>Technician</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><td colspan="4">Note : This contains only specific employee details</td></tr>
+        </tfoot>
+    </table>
+    <table border="5">
+        <caption>Employee Information</caption>
+        <thead>
+            <tr><th>ID</th><th>NAME</th><th>DEPARTMENT</th><th>POSITION</th><th colspan="2">Contact Number</th></tr>      
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Kavita</td><td>IT</td><td rowspan="2">Manager</td><td>887878787</td><td>9898989898</td></tr>
+            <tr><td>4</td><td>Rana</td><td>HR</td><td>8687878787</td><td>9898689898</td></tr>
+            <tr><td>8</td><td>Pravin</td><td>Marketting</td><td>Sales Rep</td><td colspan="2">9787878787</td></tr>
+            <tr><td>9</td><td>Sophia</td><td>Marketting</td><td>Sales Rep</td><td>8587878787</td><td>9899989898</td></tr>
+            <tr><td>10</td><td>Yusuf</td><td>IT</td><td>Technician</td><td>8787848787</td><td>9498989898</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><td colspan="6"><small>Note : This contains only specific employee details</small></td></tr>
+        </tfoot>
+    </table>
+</body>
+</html>
