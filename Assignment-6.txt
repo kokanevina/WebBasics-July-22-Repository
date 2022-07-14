@@ -1,0 +1,2 @@
+Take Company Name from user. Display Name in Uppercase using  output tag and onblur event on input
+Note : use toUpperCase function of javascript.  

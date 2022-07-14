@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        meter{
+            height: 50px;
+            width: 700px;
+        }
+    </style>
 </head>
 <body>
     <details>
@@ -77,5 +83,20 @@ put oninput event on form, make addition of 2 numbers and save in output tag-->
     </form>
     <p><b>Result is : <i><output id="resulttt"></output></i></b></p>
    </section>
-</body>
-</html>
+    <b>Fuel Indicator</b>
+    <meter min="0" value="200" max="200" id="fuelNode1"></meter> <!-- all values are safer-->
+    <b>Fuel Indicator</b>
+    <meter min="0" low="50" value="49" high="180" max="200" id="fuelNode2"></meter>
+    <!-- if value cross high value or if value comes below low value : then it shows warning-->
+    <b>Fuel Indicator</b>
+    <meter min="0" low="50" value="160"  optimum="180" high="160" max="200" ></meter>
+     <meter min="0" low="50" value="50"  optimum="180" high="160" max="200" ></meter>
+     <meter min="0" low="50" value="49"  optimum="180" high="160" max="200" ></meter>
+   <!--  when optimum 180
+     200-160 : Green, 159-50 : Orange , 49-0 : Red  -->
+     <meter min="0" low="50" value="200"  optimum="180" high="160" max="200" id="meterNode" ></meter>
+     <script>
+        setInterval(()=>{
+            document.getElementById('meterNode').value--;
+        },200)
+     </script>
