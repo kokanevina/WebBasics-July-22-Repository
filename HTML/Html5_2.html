@@ -18,8 +18,32 @@
     </details>
     <p>Hello how are you</p>
     <hr>
-    <div style="height: 200px; width: 200px; border: 2px solid blue;">
+    <div style="height: 200px; width: 200px; border: 2px solid blue; display: none;"  >
         India is my country
     </div>
+    <div style="height: 200px; width: 200px; border: 2px solid blue; visibility:hidden;"  >
+        India is my country
+    </div>
+    <div style="height: 200px; width: 200px; border: 2px solid blue;"  hidden>
+        India is my country
+    </div>
+    <p>
+        after div
+    </p>
+
+   <section>
+    <form>
+        <label>Enter your name:</label>
+        <input type="text" id="myName" onkeyup="op.value=myName.value">
+    </form>
+    <p><b>Your Name is : <i><output id="op"></output></i></b></p>
+   </section>
+   <section>
+    <form>
+        <label>Enter your name:</label>
+        <input type="text" id="myName1" onblur="op1.value=myName1.value">
+    </form>
+    <p><b>Your Name is : <i><output id="op1"></output></i></b></p>
+   </section>
 </body>
 </html>
