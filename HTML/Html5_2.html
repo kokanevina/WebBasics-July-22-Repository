@@ -45,5 +45,37 @@
     </form>
     <p><b>Your Name is : <i><output id="op1"></output></i></b></p>
    </section>
+   <!-- in form take 2 numbers as input create one output tag for result output.
+put oninput event on form, make addition of 2 numbers and save in output tag-->
+<section>
+    <form oninput="result.value=parseFloat(num1.value)+parseFloat(num2.value)">
+        <label>Enter num 1:</label>
+        <input type="number" id="num1" >
+        <label>Enter num 2:</label>
+        <input type="number" id="num2" >
+    </form>
+    <p><b>Result is : <i><output id="result"></output></i></b></p>
+   </section>
+   <hr>
+   <section>
+    <form oninput="resultt.value=parseFloat(numm1.value)+parseFloat(numm2.value);">
+        <label>Enter num 1:</label>
+        <input type="number" id="numm1" value="0" >
+        <label>Enter num 2:</label>
+        <input type="number" id="numm2" value="0">
+    </form>
+    <p><b>Result is : <i><output id="resultt"></output></i></b></p>
+   </section>
+   <section>
+    <form oninput="if(nummm1.value=='')nummm1.value='0'; 
+    if(nummm2.value=='')nummm2.value='0'; 
+    resulttt.value=parseFloat(nummm1.value)+parseFloat(nummm2.value);">
+        <label>Enter num 1:</label>
+        <input type="number" id="nummm1" >
+        <label>Enter num 2:</label>
+        <input type="number" id="nummm2" >
+    </form>
+    <p><b>Result is : <i><output id="resulttt"></output></i></b></p>
+   </section>
 </body>
 </html>
