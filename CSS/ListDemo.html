@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ListDemo</title>
     <link rel="icon" href="MyImages/star.jpg" />
-  <!--   <style>
-        li{
+    <link rel="stylesheet" href="Styles/MyCSS.css">
+    <style>
+        /*element selector*/
+        h2, li{
             border: 2px solid yellow;
-            display: inline;
-            margin: 20px;
         }
-        ol{
-            border: 2px solid red;
-          
-        }
-    </style> -->
+    </style>
+    <!--  modularity, reuse
+    can not reuse accross the web pages-->
 </head>
 <body>
     
 <section>  
     <h1>Ordered List</h1>
-    <h2>Icecreams</h2>
+    <h2 style="background-color: #9d0fbd; color: yellow;">Icecream  Flavours</h2>
+    <!--1. readability gets reduced
+    2. HTML+CSS
+    3. Can not reuse the properties-->
     <!-- default type : "1"-->
     <ol>
-        <li>Vanilla</li>
+        <li style="background-color: #9d0fbd; color: yellow;">Vanilla</li>
         <li>Mango</li>
         <li>Butterscotch</li>
         <li>Coconut</li>
