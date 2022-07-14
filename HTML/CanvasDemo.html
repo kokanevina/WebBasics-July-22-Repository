@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Demo</title>
+</head>
+<body>
+    <canvas style="background-color: yellow;" height="1000" width="800" id="myCanvas"></canvas>
+    <script>
+        let canvasNode=document.getElementById('myCanvas');
+        let ctx=canvasNode.getContext('2d');
+        /*draw a line*/
+        ctx.moveTo(20,30);
+        ctx.lineTo(150,200);
+        ctx.stroke();
+      
+        ctx.strokeText("Neosoft Technology", 40, 50);
+        ctx.font='20px Arial';
+        ctx.strokeText("Neosoft Technology", 90, 90);
+        ctx.beginPath();
+        ctx.arc(200, 500, 100, 0, Math.PI * 2, false);  
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(600, 700, 35, 56,34, false);  
+        ctx.stroke();
+    </script>
+</body>
+</html>
