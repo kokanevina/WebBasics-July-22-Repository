@@ -1,2 +1,12 @@
 Take Company Name from user. Display Name in Uppercase using  output tag and onblur event on input
 Note : use toUpperCase function of javascript.  
+
+
+Design ListDemo html page by using
+1. element selector
+2. class selector
+3. id selector
+4. special selector
+5. group selector
+
+Note : Do not use complet  properties of CSS.
