@@ -5,13 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Demo</title>
     <link rel="stylesheet" href="Styles/MyCSS.css">
+    <style>
+        /*element selector*/
+        thead{
+            height: 50px;
+            background-color: black;
+            color: white;
+            text-transform: uppercase;
+        }
+        /*id selector*/
+        #thead1{
+         font-style: italic;
+        }
+        .myStyle{
+            color: darkmagenta;
+            border: 2px double red;
+            background-color: aqua;
+        }
+        /*combine selectors*/
+        /*Apply text decoration underline to caption of table where class is myStyle*/
+        caption.myStyle{
+            text-decoration: underline;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>HOW TO CREATE TABLE IN HTML</h1>
+    <h1 class="myStyle">HOW TO CREATE TABLE IN HTML</h1>
     <table border="5">
         <caption>Employee Information</caption>
-        <thead>
-            <tr><th>ID</th><th>NAME</th><th>DEPARTMENT</th><th>POSITION</th></tr>      
+        <thead id="thead1">
+            <tr><th>ID</th><th>name</th><th>DEPARTMENT</th><th>POSITION</th></tr>      
         </thead>
         <tbody>
             <tr><td>1</td><td>Kavita</td><td>IT</td><td>Manager</td></tr>
@@ -25,9 +49,9 @@
         </tfoot>
     </table>
     <table border="5" style="border-collapse: collapse;">
-        <caption>Employee Information</caption>
+        <caption class="myStyle">Employee Information</caption>
         <thead>
-            <tr><th>ID</th><th>NAME</th><th>DEPARTMENT</th><th>POSITION</th></tr>      
+            <tr><th>ID</th><th>NAME</th><th>Department</th><th>POSITION</th></tr>      
         </thead>
         <tbody>
             <tr><td>1</td><td>Kavita</td><td>IT</td><td>Manager</td></tr>
@@ -41,7 +65,7 @@
         </tfoot>
     </table>
     <table border="5">
-        <caption>Employee Information</caption>
+        <caption class="myStyle">Employee Information</caption>
         <thead>
             <tr><th>ID</th><th>NAME</th><th>DEPARTMENT</th><th>POSITION</th><th colspan="2">Contact Number</th></tr>      
         </thead>
