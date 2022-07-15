@@ -28,8 +28,28 @@
             background-image: radial-gradient(pink,purple,green,cyan,crimson);
         }
         #block5{
-            /*ellipse, circle*/
-            background-image: radial-gradient(circle,pink,rgba(255,0,0),green,cyan,crimson);
+            /*ellipse, circle, circle at 0 0*/
+            background-image: radial-gradient(circle at 0 0 ,pink,rgba(255,0,0),green,cyan,crimson);
+        }
+        #block6{
+            background-image: radial-gradient(closest-side at 80% 50%, blue, green, yellow, black);
+
+        }
+        .repeat{
+            width: 600px;
+            display: inline-block;
+        }
+        #block7 {
+            background-image: linear-gradient(to right, red,yellow);
+        }
+        #block8 {
+            background-image: repeating-linear-gradient(to right, red,yellow 100px);
+        }
+        #block9 {
+            background-image: repeating-linear-gradient(to right, red,yellow 20%);
+        }
+        #block10 {
+            background-image: repeating-linear-gradient(to right, red,yellow 50px);
         }
     </style>
 </head>
@@ -47,6 +67,21 @@
         India is my country
     </div>
     <div class="block" id="block5"> 
+        India is my country
+    </div>
+    <div class="block" id="block6"> 
+        India is my country
+    </div>
+    <div class="block repeat"  id="block7"> 
+        India is my country
+    </div>
+    <div class="block repeat"   id="block8"> 
+        India is my country
+    </div>
+    <div class="block repeat"  id="block9"> 
+        India is my country
+    </div>
+    <div class="block repeat"  id="block10"> 
         India is my country
     </div>
 </body>
