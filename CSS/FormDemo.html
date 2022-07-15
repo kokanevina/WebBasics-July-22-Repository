@@ -5,6 +5,24 @@
  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <style>
+        /*please apply good unique styling to email field*/
+        [type='email']{
+            background-color: bisque;
+            border: 3px double blue;
+            height: 30px;
+            width: 200px;
+        }
+        /*apply good design for submit button*/
+      /*select elements having class india*/
+        .india{
+            color: brown;
+        }
+        /*select the elements having attribute class regardless of any value*/
+        [class]{
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body>
     <section>
@@ -26,6 +44,8 @@
             <input id="contact" pattern="[0-9]{10}" required  type="tel" >
             <label for="mail">Email Id: </label>
             <input type="email"  id="mail" required>
+            <label for="mail2">Email Id: </label>
+            <input type="email"  id="mail2" required>
             <label for="uname">Set Username: </label>
             <input type="text"  id="uname" minlength="3" maxlength="10" required>
             <label for="pass">Set Password: </label>
@@ -72,6 +92,22 @@
 
         <input type="color" id="myColor"><label>:Choose Label</label>
     </section>
+
+    <p class="india">
+        para 1 I love my india
+    </p>
+    <p class="india">
+        para 2 I love my india
+    </p>
+    <p class="country">
+        para 3 I love my india
+    </p>
+    <div class="india">
+        div I love my india
+    </div>
+    <div>
+        div I love my india
+    </div>
 <!-- -->
     <script>
         let fnameField=document.getElementById('fname')
