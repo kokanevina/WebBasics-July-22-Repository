@@ -1,1 +1,3 @@
-Implement the example of border-image (short hand property)
+1.Implement the example of border-image (short hand property)
+    i. Implement using image
+    ii. Implement using linear gradient
