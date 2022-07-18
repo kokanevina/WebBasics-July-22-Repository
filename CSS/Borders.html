@@ -20,12 +20,29 @@
             border-style: double solid dotted dashed;
             border-width: 6px 4px 2px 8px;
             border-color: red green blue yellow;
+            border-top-left-radius: 50px;
+            /*padding : spacing inside selected element*/
+            padding-left: 30px;
+              /*margin : spacing outside selected element*/
+            margin-left: 30px;
+            margin-top: 20px;
         }
         #block3{
             border-style: solid;
             border-color: green;
             border-width: 5px;
             border: 5px green solid; /*any sequence*/
+            border-radius: 40px;
+            border-radius: 40px 10px 50px 0px;
+            margin: 10px;
+            padding: 20px;
+            padding: 20px 50px; /* t r b l, b=t, l=r*/
+            padding : 20px 50px 20px 0px
+
+        }
+        #block4{
+            padding-left: 30px;
+            margin-left: 40px;
         }
     </style>
 </head>
@@ -37,7 +54,10 @@
         India is my country
     </div>
     <div class="block" id="block3"> 
-        India is my country
+        India is my country. India is my country India is my country India is my country India is my country India is my country.
+        India is my country India is my country India is my country India is my country India is my country
+        India is my country India is my country India is my country India is my country India is my country
+        India is my country India is my country India is my country
     </div>
     <div class="block" id="block4"> 
         India is my country
@@ -45,20 +65,6 @@
     <div class="block" id="block5"> 
         India is my country
     </div>
-    <div class="block" id="block6"> 
-        India is my country
-    </div>
-    <div class="block repeat"  id="block7"> 
-        India is my country
-    </div>
-    <div class="block repeat"   id="block8"> 
-        India is my country
-    </div>
-    <div class="block repeat"  id="block9"> 
-        India is my country
-    </div>
-    <div class="block repeat"  id="block10"> 
-        India is my country
-    </div>
+   
 </body>
 </html>
