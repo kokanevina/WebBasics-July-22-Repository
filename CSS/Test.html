@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./position-absoluteStyles.css">
+    <title>Position Demo</title>
+    <style>
+        body{
+            border: 2px solid red;
+        }
+        div{
+           
+            border: 2px solid blue;
+        }
+        article{
+            position: relative;
+            border: 2px solid pink;
+        }
+        article *{
+           
+            border: 2px solid green;
+        }
+        #mysection{
+            position: absolute;
+            bottom: 0px;
+           left:100px
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <article>
+            <header>
+                This is header
+            </header>
+            <section id="mysection">
+                This is section
+            </section>
+            <footer>
+                This is footer
+            </footer>
+        </article>
+    </div>
+</body>
+</html>
+<!-- if parent postion:relative
+        child position : absolute the child gets position according to parent boundary
+    if parent position : static 
+        child position : absolute the child get position according to outer parent
+        if outer parent : static then child gets positioned according to .... viewport-->
