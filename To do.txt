@@ -7,5 +7,4 @@ target values other than predefined
 
 picture : if source is not getting loaded, it will check next source, img tag in the end
 
-
-Gradients with dift shades of same color
+New item added in DL when submit button pressed
