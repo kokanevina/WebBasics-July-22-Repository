@@ -7,6 +7,10 @@
     <style>
         body{
             border: 3px solid darkmagenta;
+            height: 800px;
+        }
+        article{
+            height: 400px;
         }
         article{
             border: 4px solid pink;
@@ -14,19 +18,36 @@
             left: 20px;
             top:20px;
         }
-        section,h1{
+        section,h1,div{
             border: 4px double red;
         }
         header{
             border: 4px double blue;
             /*static : bydefault*/
-            position: relative; /*relative to nearest boundary*/
+            position: relative; /*relative to nearest boundary (original position)*/
             left: 10px;
-            bottom:20px;
+            bottom: 20px;
+        }
+        section{
+            position: absolute; /*relative to parent*/
+            bottom: 10px;
+            width: 200px;
+        }
+        div{
+            /*elements behave according to view port only*/
+            position: fixed; /*regardless of parent position, relative to viewport*/
+            left: 20px;
+            top:0px
         }
     </style>
 </head>
 <body>
+    <main>
+        India is my country
+        India is my country
+        India is my country
+        India is my country India is my country
+    </main>
     <article>
         <header>
             This is header
@@ -34,6 +55,9 @@
         <section>
             This is section
         </section>
+        <div>
+            This is div
+        </div>
     </article>
 </body>
 </html>
