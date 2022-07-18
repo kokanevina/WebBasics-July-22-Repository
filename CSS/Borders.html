@@ -50,7 +50,23 @@
             background: rgba(0, 255,0, 0.3);
         }
         body{
-             background:  no-repeat   center/cover url('../HTML/MyImages/star.jpg') fixed;  
+            /*  background:  no-repeat   center/cover url('../HTML/MyImages/star.jpg') fixed;   */
+        }
+        #block6{
+            width: 700px;
+            height: 200px;
+            /* border: 1px red solid; */
+            margin: 30px;
+            /*right width, bottom width, spread value*/
+            box-shadow: 10px 0px ;
+            box-shadow: 10px 15px ;
+            box-shadow: 10px 15px 50px; 
+            box-shadow: 10px 15px 30px red;
+            box-shadow: -10px -15px 4px red;  /* ++ rb, +- rt, -+ lb, -- lt*/
+           /*1st 2 values are compulsary, sequence matters*/
+        }
+        h3{
+            text-shadow: 10px 10px 4px red;
         }
     </style>
 </head>
@@ -73,6 +89,9 @@
     <div class="block" id="block5"> 
         India is my country
     </div>
-   
+   <div class="block" id="block6">
+        india 
+     <h3>This is example of text shadow and box shadow</h3>
+   </div>
 </body>
 </html>
