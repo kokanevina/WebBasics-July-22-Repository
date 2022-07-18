@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Demo</title>
+   <style>
+     /*inline elements:border: 1. come in one line 2. height and width NA, padding margin :A (spoils)*/
+         /*block elements:border: 2. come in new line 2. height and width A, padding, margin : A*/
+         /*inline-block : come in one line, height width : A*/
+    #section1{
+        width: 600px;
+        border: 2px double blue;
+    }
+    #section1 *{
+        border: 2px solid red;
+    }
+    #section1 .blocke{
+        height: 200px;
+        width: 400px;
+        padding: 30px;
+        margin:20px;
+    }
+    #section1 .ine{
+        height: 200px;
+        width: 400px;
+        margin: 0px;  /*try to give other values*/
+        padding: 0px;
+    }
+    /*-------------------------------------------------------------*/
+    #section2{
+        border:2px solid pink;
+    }
+    #section2 *{
+        border:2px solid yellow;
+    }
+    #section2 .blocke{
+        display: inline;
+        padding: 0px; margin: 0px;
+        height: 100px; width: 200px;
+    }
+     #section2 .ine{
+        display: block;
+        padding: 10px; margin: 20px;
+        height: 100px;
+        width: 200px;
+    }
+    /*--------------------------------------------------------*/
+    figure section{
+        display: inline-block;
+        height: 250px;
+        width: 250px;
+        border: 3px dashed violet;
+    }
+   </style>
+</head>
+<body>
+    <section id="section1">
+     <div class="blocke">
+            Welcome to neosoft technology
+     </div>
+     <section  class="blocke">
+        This is complete IT solution
+     </section>
+     <b class="ine"> We have design development and testing departments </b>
+     <i class="ine">We also have learning and developement. We also have learning and developement </i>
+    </section>
+   <hr>
+    <section id="section2">
+        <div class="blocke">
+               Welcome to neosoft technology
+        </div>
+        <section  class="blocke">
+           This is complete IT solution
+        </section>
+        <b class="ine"> We have design development and testing departments </b>
+        <i class="ine">We also have learning and developement. We also have learning and developement </i>
+    </section>
+    <figure>
+        <section>
+            <img src="../HTML/MyImages/Rose.jpg" height="200px" width="200px">
+        </section>
+        <section>
+            <img src="../HTML/MyImages/yellowrose.jpg" height="200px" width="200px">
+        </section>
+    </figure>
+</body>
+</html>
