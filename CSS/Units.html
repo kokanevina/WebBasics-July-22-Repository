@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        html{
+            font-size: 10px;
+        }
+        #parent{
+          font-size: 30px; 
+        }
+        /*b which is child of section should have font-size double of its parent*/
+        #parent>b{
+            /* font-size: 30px;  */   /*need to recalculate and put*/
+            font-size: 2em; /* 2*15=30px*/  
+            /*em : works with parent font size. if font-size not mentioned in parent but mentioned in
+            indirect parent then em will work with indirect parent*/
+        }
+        small{
+            font-size: 0.5em;  /*small tag default works with em*/
+        }
+        #parent>i{
+            font-size: 2rem; /*always works root element font size*/
+        }
+        #parent>div{
+            height: 100px;
+            border: 1em red solid; /* 1 * font-size of parents*/
+        }
+        #parent>div>p{
+            border: 0.5em pink solid; /* 1 * font-size of parents*/
+        }
+    </style>
+</head>
+<body>
+    <section id="parent">
+        <b>India is my country</b>
+        <i>I love my india</i>
+        Hello how r u?
+        <div>
+            India
+            <p>
+                India
+            </p>
+        </div>
+    </section>
+    <h1>Neosoft technologies<small> IT solution</small></h1>
+    <h2>Neosoft technologies<small> IT solution</small></h2>
+    
+</body>
+</html>
