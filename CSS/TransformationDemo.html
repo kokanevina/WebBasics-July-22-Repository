@@ -21,6 +21,17 @@
         #block2:hover{
             transform: rotateY(-88deg);  /*rotate(180deg), rotateY(-88deg), rotateX(88deg)*/
         }
+        .ss{
+            margin:auto;
+        }
+        #block3:hover{
+            transform: scale(2) ; /*scaleX(2),scaleX(0.5),scaleX(-2), scaleY(4), scale(2,4),scale(2)  */
+            /*note: scale with single value applicable for both width and height*/
+        }
+        #block4:hover{
+            transform: skew(45deg); /*skewX(50deg), skewY(45deg), skew(45deg,56deg)*/
+            /*Note: skew with single value behaves like skewX, -ve angles allowed*/
+        }   
     </style>
 </head>
 <body>
@@ -29,6 +40,12 @@
     </section>
     <section class="block" id="block2">
         India is my country
-</section>
+    </section>
+    <section class="block ss" id="block3">
+        India is my country
+    </section>
+    <section class="block ss" id="block4">
+        India is my country
+    </section>
 </body>
 </html>
