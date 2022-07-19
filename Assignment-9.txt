@@ -1,2 +1,5 @@
 Implement following Pseudo classes
 checked, disabled, readonly,  invalid, empty, not, root
+
+Implement following Pseudo elements
+Marker

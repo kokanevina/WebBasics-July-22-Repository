@@ -45,6 +45,28 @@
         a:active{
             color: darkorange;
         }
+        p::first-line{
+            color: blueviolet;
+        }
+        div::first-line{
+            background-color: yellow;
+        }
+        p::first-letter{
+            color: crimson;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        h2::after{
+            content: ' user';
+        }
+        h2::before{
+            content: 'Welcome';
+        }
+        p::selection{
+            color: darkblue;
+            background-color: bisque;
+        }
     </style>
 </head>
 <body>
@@ -58,5 +80,15 @@
             <li><a href="https://www.eurokidsindia.com/online-nursery-school/">Kids Nursary Online Study</a></li>
         </ul>
     </nav>
+    <p>
+        India is my country. All indians all my brothers and sisters.<br>
+        India is my country. All indians all my brothers and sisters.
+    </p>
+    <div>
+        <h2>Hello</h2>
+        <p>
+            How r u
+        </p>
+    </div>
 </body>
 </html>
