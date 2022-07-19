@@ -5,37 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .flexbox, #normal{
+        .flexbox{
             border: 3px double crimson;
             background: yellowgreen;
+            height: 300px;    /*default: childs gets stretched align-items: stretch*/
+            display: flex;   /*flex-direction : row default*/  
         }
-        .flexbox>div,#normal>div{
+        .flexbox>div{
             border: 3px double darkgoldenrod;
             background: crimson;        
         }
-
-        #flex1{
-            display: flex; /*flex-direction : row default*/
-            height: 300px;  /*default: childs gets stretched align-items: stretch*/
+        #flex1{         
             flex-direction : row; /*row, column, row-reverse, column-reverse*/
             align-items: center; /*v align stretch, center,flex-start, flex-end*/
-            justify-content: end;/*center,flex-start/start, flex-end/end*/
+            justify-content: space-around;/*center,flex-start/start, flex-end/end*/
+        }     
+        #flex2{
+            width: 400px;
+            flex-wrap: wrap;
+            justify-content: center;
+            /*when in flex container we have muliple lines of childs then for vertical alignment
+            1. align-items, 2. align-content*/
+            align-items: flex-start;
+            align-content: center; /*multiple lines (wrap) then this is better*/
         }
-        
-        
 
 
-
-
-
-
-        #normal{
-            height: 300px;
-        }
-        #normal>div{
-            display: inline-block;
-            display: block;
-        }
     </style>
 </head>
 <body>
@@ -49,8 +44,7 @@
         <div>Item 7</div>
         <div>Item 8</div>
     </section>
-    <hr>
-    <section id="normal">
+    <section class="flexbox" id="flex2">
         <div>Item 1</div>
         <div>Item 2</div>
         <div>Child Item 3</div>
@@ -59,7 +53,13 @@
         <div>Child Item 6</div>
         <div>Item 7</div>
         <div>Item 8</div>
+        <div>Item 9</div>
+        <div>Item 10</div>
+        <div>Child Item 11</div>
+        <div>Item 12</div>
+        <div>Item 13</div>
     </section>
+    
 
 </body>
 </html>
