@@ -67,6 +67,10 @@
             color: darkblue;
             background-color: bisque;
         }
+        article:first-child::first-line{
+            color: aqua;
+        }
+
     </style>
 </head>
 <body>
@@ -90,5 +94,24 @@
             How r u
         </p>
     </div>
+
+    <section>
+        <article>
+            article 1.<br>article 1
+        </article>
+        <article>
+            article 2.<br>article 2
+        </article>
+    </section>
+    <hr>
+    <div>
+        <article>
+            article 1.<br>article 1
+        </article>
+        <article>
+            article 2.<br>article 2
+        </article>
+    </div>
+    <!-- apply color to first line of article as first child-->
 </body>
 </html>

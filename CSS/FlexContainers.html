@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexbox, #normal{
+            border: 3px double crimson;
+            background: yellowgreen;
+        }
+        .flexbox>div,#normal>div{
+            border: 3px double darkgoldenrod;
+            background: crimson;        
+        }
+
+        #flex1{
+            display: flex; /*flex-direction : row default*/
+            height: 300px;  /*default: childs gets stretched align-items: stretch*/
+            flex-direction : row; /*row, column, row-reverse, column-reverse*/
+            align-items: center; /*v align stretch, center,flex-start, flex-end*/
+            justify-content: end;/*center,flex-start/start, flex-end/end*/
+        }
+        
+        
+
+
+
+
+
+
+        #normal{
+            height: 300px;
+        }
+        #normal>div{
+            display: inline-block;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <section class="flexbox" id="flex1">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Child Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Child Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+    </section>
+    <hr>
+    <section id="normal">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Child Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Child Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+    </section>
+
+</body>
+</html>
