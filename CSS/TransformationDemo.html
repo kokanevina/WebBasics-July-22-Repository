@@ -32,6 +32,16 @@
             transform: skew(45deg); /*skewX(50deg), skewY(45deg), skew(45deg,56deg)*/
             /*Note: skew with single value behaves like skewX, -ve angles allowed*/
         }   
+        #inline{
+           display: block;
+            height: 30px;
+            width: 50px;
+            border: 3px solid red; 
+            transition-duration: 3s;
+        }
+        #inline:hover{
+            transform: rotate(45deg);
+        }
     </style>
 </head>
 <body>
@@ -47,5 +57,6 @@
     <section class="block ss" id="block4">
         India is my country
     </section>
+    <b id="inline">  India is my country</b>
 </body>
 </html>
