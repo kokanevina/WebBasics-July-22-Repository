@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #news{
+        column-count: 6;
+        column-width: auto; /*make one of them auto*/
+        columns: 120px auto; /*shorthand for count, width*/
+
+       
+        column-rule-style: solid;
+        column-rule-color: red;
+        column-rule-width: 4px;
+        
+        column-rule: blue double 6px; /*short hand*/
+        
+        column-gap: 30px;
+       }
+       #news>h2{
+        column-span: all;
+       }
+    </style>
+</head>
+<body>
+    <article>
+       
+        <section id="news">
+            <h2>Sachin Tendulkar</h2>
+            <p>
+                Sachin Tendulkar has been the most complete batsman of his time, 
+                the most prolific runmaker of all time, and arguably the biggest cricket icon the game has ever known. His batting was based on the purest principles: perfect balance, economy of movement, precision in stroke-making, 
+                and that intangible quality given only to geniuses - anticipation. If he didn't have a signature stroke - the upright, back-foot punch comes close - it's because he was equally proficient at each of the full range of orthodox shots
+                 (and plenty of improvised ones as well) and can pull them out at will.
+            </p>
+            <p>
+                Sachin Tendulkar has been the most complete batsman of his time, 
+                the most prolific runmaker of all time, and arguably the biggest cricket icon the 
+                game has ever known. His batting was based on the purest principles: perfect balance, economy of movement, precision in stroke-making, and that intangible quality given only to geniuses - anticipation. 
+                If he didn't have a signature stroke - the upright, back-foot punch comes close - it's because
+                 he was equally proficient at each of the full range of orthodox shots
+                 (and plenty of improvised ones as well) and can pull them out at will.
+            </p>
+        </section>    
+    </article>
+    
+</body>
+</html>
