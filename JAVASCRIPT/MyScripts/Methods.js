@@ -35,4 +35,3 @@ let cubeArrow1=num=>num*num*num;
 let cr=cubeArrow1(5);
 console.log(cr);
 
-
