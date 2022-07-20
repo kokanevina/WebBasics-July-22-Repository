@@ -86,3 +86,22 @@ function test(num=45){
 }
 test();
 test(67);
+
+
+function Demo(){
+    //var type variables, inside function anywhere we declare, have functional scope
+    for(var i=0;i<=5;i++){
+        console.log("inside loop:"+i);
+        if(i==5){
+            var j=1;
+            let k=9;
+            console.log(k);
+        }// end if  // scope of k ends
+    }/// end for
+    console.log(`Outside loop: ${i}`);
+    console.log(j);
+    // let type variables, inside function,  have block scope where they are declared
+   // console.log(k);
+}// scope of i and j ends
+
+Demo();
