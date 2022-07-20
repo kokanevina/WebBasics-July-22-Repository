@@ -64,6 +64,7 @@ array.forEach(e=>console.log(e));
 // map : visit e->new e -> store in array
 //in the end it will return u that new array
 array=[67000,78000,45000,67000,98000,89000,78000];
+// incre salary with 2000
 //[69000,80000,47000,69000,100000,91000,80000]
 
 function myLogic(array){
@@ -80,3 +81,58 @@ console.log(resultarray);
 
 let resar=array.map(e=>e+2000);
 console.log(resar);
+
+//filter : condn : visit e-> e==cond--> e stored in new array
+// search salaries less than 70000
+array=[79000,67000,78000,45000,67000,98000,89000,78000];
+//[67000,45000,67000]
+
+function myLogic1(array){
+    let temp=[];
+   for(let ele of array){
+       if(ele<70000)
+        temp.push(ele);
+   }
+    return temp;
+}
+ resultarray=myLogic1(array);
+console.log(array);
+console.log(resultarray);
+
+let resarr=array.filter(el=>el<70000)
+console.log(resarr);
+
+// increment salary by 2000 of salaries which are less than 70000
+
+array.filter(ele=>ele<70000).map(ele=>ele+2000).forEach(ele=>console.log(ele));
+
+// find : returns 1st element matching with condition
+
+
+let r=array.find(ele=>ele<70000);
+console.log("Searched :"+r);
+
+
+ r=array.find((ele,i)=>{
+    console.log(i);
+    return ele<70000
+});
+console.log("Searched :"+r);
+
+// reduce : n ele===> return single result
+array=[79000,67000,78000,45000,67000,98000,89000,78000];
+let summ=array.reduce((acc,ele)=>acc+ele);
+console.log(summ);
+//acc: initially point to index 0 element, ele: initially point to index 1 element
+//acc=79000+67000 :a acc=a+78000 :b
+let summ1=array.reduce((acc,ele)=>acc+ele, 10);
+// acc=10 : initial value ele: initially point to index 0 element
+//10+79000=79010
+console.log(summ1);
+
+let ageArray=[3,1,10,23,2,100,34];
+document.write("<br>")
+document.write(ageArray)
+document.write("<br>")
+ageArray.sort((e1,e2)=>e1-e2);
+document.write(ageArray);
