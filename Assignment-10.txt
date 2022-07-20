@@ -1,4 +1,9 @@
-Assignment:Font-Face Rule
+Assignment:
+1. Implement Font-Face Rule
+2. Declare any string array and iterate using normal for, for of and forEach
+
+
+
 Further u can learn
 keyframes
 CSS grid system.
