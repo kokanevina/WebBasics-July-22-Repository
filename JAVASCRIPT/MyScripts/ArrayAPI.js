@@ -32,14 +32,8 @@ let bookArray=[
   }
 
 ];
-
 let cityArr=['mumbai','pune','jaipur','satara','sangli','solapur'];
-
-//length, join, push,pop, shift, unshift, sort, reverse
-// check length
-// arrays are mutable
-// sort the array
-// reverse array
+// join
 console.log(cityArr.length);
 let l=cityArr.push('udaypur'); // added from last
 console.log(l);
@@ -54,11 +48,8 @@ console.log(cityArr);
 poped=cityArr.shift();  // removing from front
 console.log("popped:"+poped);
 console.log(cityArr);
-
-
 let arr4=new Array();
 console.log(arr4.length);  // later we can push the element
-
 let arr5=new Array(3); // initial length
 console.log(arr5.length);
 for(let i=0;i<arr5.length;i++){
@@ -66,11 +57,24 @@ for(let i=0;i<arr5.length;i++){
 }
 arr5.push(45);
 console.log(arr5);
-
-
 let arr6=new Array(4,5); // values
 console.log(arr6.length);
 console.log(arr6);
-
 let arr7=new Array('hi'); // value
 console.log(arr7);
+
+let joineds=cityArr.join();  // by default :,
+console.log(joineds);
+joineds=cityArr.join(" ");  // by default :,
+console.log(joineds);
+joineds=cityArr.join("AA");  // by default :,
+console.log(joineds);
+
+let teamArray=['CSK', 'MI'];
+console.log(teamArray.join(" v/s " ));
+//splice
+cityArr=['mumbai','pune','jaipur','satara','sangli','solapur'];
+cityArr.splice(1,2);
+console.log(cityArr);
+cityArr.splice(1,2,'aaa','bbb');
+console.log(cityArr);
