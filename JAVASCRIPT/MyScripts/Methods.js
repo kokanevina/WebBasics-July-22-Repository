@@ -134,5 +134,6 @@ let ageArray=[3,1,10,23,2,100,34];
 document.write("<br>")
 document.write(ageArray)
 document.write("<br>")
-ageArray.sort((e1,e2)=>e1-e2);
+ageArray.sort((e1,e2)=>e1-e2); 
 document.write(ageArray);
+
