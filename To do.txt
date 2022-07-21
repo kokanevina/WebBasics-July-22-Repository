@@ -3,8 +3,12 @@ Can we assign a particular number to any item? Like vanilla is 1 so 1 comes when
 what to do if we want to give random numbers
 
 
+
 target values other than predefined
 
 picture : if source is not getting loaded, it will check next source, img tag in the end
 
 New item added in DL when submit button pressed
+
+
+Memory Management in Javascript
