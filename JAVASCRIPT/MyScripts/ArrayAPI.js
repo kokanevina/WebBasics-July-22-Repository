@@ -65,10 +65,9 @@ console.log(arr7);
 
 let joineds=cityArr.join();  // by default :,
 console.log(joineds);
-joineds=cityArr.join(" ");  // by default :,
+joineds=cityArr.join(" "); 
 console.log(joineds);
-joineds=cityArr.join("AA");  // by default :,
-console.log(joineds);
+joineds=cityArr.join("AA"); 
 
 let teamArray=['CSK', 'MI'];
 console.log(teamArray.join(" v/s " ));
