@@ -12,3 +12,7 @@ New item added in DL when submit button pressed
 
 
 Memory Management in Javascript
+
+
+mam what is diff bet dom vs Virtual DOM
+
