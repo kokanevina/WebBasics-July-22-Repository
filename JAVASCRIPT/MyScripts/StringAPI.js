@@ -83,3 +83,6 @@ let comparsion= india1.trim().toUpperCase()===india2.trim().toUpperCase();
 console.log(comparsion);
 
 
+
+
+// include, search, split, padStart, padEnd, charCodeAt, match, replace
