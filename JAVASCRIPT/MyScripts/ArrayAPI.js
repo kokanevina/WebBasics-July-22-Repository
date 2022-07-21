@@ -33,10 +33,44 @@ let bookArray=[
 
 ];
 
-cityArr=['mumbai','pune','jaipur','satara','sangli','solapur']
+let cityArr=['mumbai','pune','jaipur','satara','sangli','solapur'];
 
 //length, join, push,pop, shift, unshift, sort, reverse
 // check length
-// arraya are mutable
+// arrays are mutable
 // sort the array
 // reverse array
+console.log(cityArr.length);
+let l=cityArr.push('udaypur'); // added from last
+console.log(l);
+console.log(cityArr.length);
+cityArr[2]='nanded';
+console.log(cityArr);
+let poped=cityArr.pop();  // removed from last
+console.log("popped:"+poped);
+console.log(cityArr);
+cityArr.unshift("shivgad"); // adding from front
+console.log(cityArr);
+poped=cityArr.shift();  // removing from front
+console.log("popped:"+poped);
+console.log(cityArr);
+
+
+let arr4=new Array();
+console.log(arr4.length);  // later we can push the element
+
+let arr5=new Array(3); // initial length
+console.log(arr5.length);
+for(let i=0;i<arr5.length;i++){
+    arr5[i]=56;  // custom user input
+}
+arr5.push(45);
+console.log(arr5);
+
+
+let arr6=new Array(4,5); // values
+console.log(arr6.length);
+console.log(arr6);
+
+let arr7=new Array('hi'); // value
+console.log(arr7);
