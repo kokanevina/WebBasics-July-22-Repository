@@ -40,14 +40,32 @@ function validate2(){
         errorNode2.innerHTML="<small>Age is required</small>";
         ageNode.style.border="2px solid red";
     }
+    else if(age<20 || age>60){
+        errorNode2.innerHTML="<small>Age must be between 20 to 60</small>";
+        ageNode.style.border="2px solid red";
+    }
+    else{
+        ageNode.style.border="2px solid green"; 
+    }
 }
 function validate3(){
     let mobile=mobileNode.value;
     errorNode3.innerHTML="";
+    let regex=new RegExp("^[0-9]{10}$");
+    console.log(mobile);
+    console.log(regex.test("mobile"));
     if(mobile===''){
         errorNode3.innerHTML="<small>Mobile number is required</small>";
         mobileNode.style.border="2px solid red";
     }
+    else if(regex.test(mobile)===false){
+        errorNode3.innerHTML="<small>Mobile number must be 10 digits number</small>";
+        mobileNode.style.border="2px solid red";
+    }
+    else{
+        mobileNode.style.border="2px solid green";
+    }
+
 }
 function validate4(){
     let email=emailNode.value;
