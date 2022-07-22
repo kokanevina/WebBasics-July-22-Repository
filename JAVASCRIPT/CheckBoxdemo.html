@@ -35,10 +35,15 @@
                 let tableNode=document.createElement('table');   // DOM method
                 tableNode.setAttribute('border','2');  // DOM method
                 tableNode.setAttribute('id','coursetable');
+                tableNode.style.backgroundImage='linear-gradient(red,yellow)';
+                tableNode.style.color='green';
+                tableNode.style.border='4px solid blue';
+                tableNode.style.width='50%';
                 let trNode=document.createElement('tr');
                 tableNode.append(trNode);   // appendChild
                 for(let course of courseArray){
                     let tdNode=document.createElement('td');
+                    tdNode.style.padding="10px";
                     trNode.append(tdNode);
                     tdNode.textContent=course;
                 }
@@ -46,6 +51,9 @@
         }
         
     </script>
+    <!-- how to apply style 1. style attribute with element. use javascript/css keys in camel case
+    background-color -> backgroundColor, margin -> margin,
+     2.if u have class in css file   we can set that class to apply a styling-->
     
 </body>
 </html>

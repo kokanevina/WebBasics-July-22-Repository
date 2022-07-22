@@ -1,0 +1,2 @@
+1. Implement removeChild function with any example
+2. Implement OrderedList to add checked elements' values on change event (replace a table with ol)
