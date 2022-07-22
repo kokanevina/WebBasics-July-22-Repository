@@ -2,85 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
- 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <style>
+        input:valid{
+            border: 2px solid green;
+        }
+        input:invalid{
+            border: 2px solid red;
+        }
+    </style>
 </head>
 <body>
     <section>
         <h1>Registration Form</h1>
-
-        <form action="Success.html" onsubmit="test()">
-            <!-- text field-->
-            <label for="fname">First Name:</label>
-            <input id="fname" name="myName" pattern="[A-Za-z]*" required>
-            <label for="lname">Last Name:</label>
-            <input type="text" placeholder="Last Name" id="lname" name="myName">
-            <label for="company">Company Name:</label>
-            <input type="text"  id="company" name="company" value="neosoft" required> 
-            <label for="loc">Work Location: </label>
-            <input type="text"  id="loc" name="location" value="Dadar" readonly>
-            <label for="age">Age: </label>
-            <input type="number"  id="age" min="20" max="60" required>
-            <label for="contact">Mobile Number: </label>
-            <input id="contact" pattern="[0-9]{10}" required  type="tel" >
-            <label for="mail">Email Id: </label>
-            <input type="email"  id="mail" required>
-            <label for="uname">Set Username: </label>
-            <input type="text"  id="uname" minlength="3" maxlength="10" required>
-            <label for="pass">Set Password: </label>
-           <!--  <label><small>Password must contain atleast one</small></label>
-            <ol style="font-size: 10px;">
-                <li>Capital Letter</li>
-                <li>Small Letter</li>
-                <li>Digit</li>
-                <li>Special Symbol</li>
-            </ol>
-            <small>Password should be min 8 chars long</small> -->
-            <input type="text"  id="pass" pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}">
-            <label for="confirmpass">Confirm Password: </label>
-            <input type="password"  id="confirmpass" required>
-            <label for="birthdate">Birthdate: </label>
-            <input type="datetime-local"  id="birthdate" >
-            <label for="jmonth">Joining Month: </label>
-            <input type="month"  id="jmonth" >
-            <section>
-                <label>Choose Interested Course:</label><br>
-                <label><input type="checkbox" id="ch1" name="course" value="java">:JAVA</label>
-                <label><input type="checkbox" id="ch2" name="course"  value="web" checked required>:WEB BASICS</label>
-                <label><input type="checkbox" id="ch3" name="course"  value="angular">:ANGULAR</label>
-                <label><input type="checkbox" id="ch4" name="course"  value="react">:REACT</label>
-            </section>
-            <section>
-                <label>Choose Gender:</label><br>
-               <label> <input type="radio" id="r1" name="gender" value="male">:MALE</label>
-               <label> <input type="radio" id="r2" name="gender" value="female">:FEMALE</label>
-            </section>
-            <label>Address:</label><br>
-            <textarea rows="10" cols="30"></textarea>
-            <label>Where you want to attend the course:</label>
-            <select id="location" name="loc">
-                <option value="dadar">DADAR</option>
-                <option value="rabale">RABALE</option>
-            </select>
-            <input type="submit" value="REGISTER">
-            <input type="image" src="MyImages/star.jpg" height="50" width="100">
-            <input type="reset">
-            <button>SUBMIT FORM</button>
-            <input type="button" value="SUBMIT USER FORM">
+        <form action="Success.html" novalidate>
+            <table>
+                <tr><td> <label for="fname">First Name:</label></td>
+                    <td><input id="fname" name="myName" pattern="[A-Za-z]*" onblur="validate1()" required></td></tr>
+                <tr><td></td><td id="error1"></td></tr>
+                <tr><td> <label for="age">Age: </label></td>
+                    <td> <input type="number"  id="age" min="20" max="60" onblur="validate2()"  required></td></tr>
+                <tr><td></td><td id="error2"></td></tr>
+                <tr><td><label for="contact">Mobile Number: </label></td>
+                    <td><input id="contact" pattern="[0-9]{10}" required  type="tel"  onblur="validate3()"></td></tr>
+                <tr><td></td><td id="error3"></td></tr>
+                <tr><td> <label for="mail">Email Id: </label></td>
+                    <td><input type="email"  id="mail" required  onblur="validate4()"></td></tr>
+                <tr><td></td><td id="error4"></td></tr>
+                <tr><td><label for="uname">Set Username: </label></td>
+                    <td> <input type="text"  id="uname" minlength="3" maxlength="10"  onblur="validate5()" required></td></tr>
+                <tr><td></td><td id="error5"></td></tr>
+                <tr><td> <label for="pass">Set Password: </label></td>
+                    <td><input type="text"  id="pass" required  onblur="validate6()" pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}"></td></tr>
+                <tr><td></td><td id="error6"></td></tr>
+                <tr><td> <label for="confirmpass">Confirm Password: </label></td>
+                    <td> <input type="password"  id="confirmpass"   onblur="validate7()" required></td></tr>
+                <tr><td></td><td id="error7"></td></tr>
+                <tr><td></td><td> <input type="submit" value="REGISTER"> <input type="reset"></td></tr>
+            </table>
         </form>
-
-        <input type="color" id="myColor"><label>:Choose Label</label>
     </section>
-<!-- -->
-    <script>
-        let fnameField=document.getElementById('fname')
-        let firstName=fnameField.value;
-        let nameNode=document.getElementsByName('myName');
-       
-        function test(){
-            window.alert("Form Submitted");
-        }
-    </script>
+    <script src="MyScripts/Validation.js"></script>
 </body>
 </html>
