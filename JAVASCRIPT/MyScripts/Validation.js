@@ -89,13 +89,37 @@ function validate5(){
         errorNode5.innerHTML="<small>username is required</small>";
         unameNode.style.border="2px solid red";
     }
+    else if(uname.length<3 || uname.length>10){
+        errorNode5.innerHTML="<small>username must be 3 to 10 characters long</small>";
+        unameNode.style.border="2px solid red";
+    }
+    else{
+        unameNode.style.border="2px solid green";
+    }
 }
 function validate6(){
     let pass=passNode.value;
     errorNode6.innerHTML="";
+    let regx=new RegExp("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,12}$");
     if(pass===''){
         errorNode6.innerHTML="<small>Password is required</small>";
         passNode.style.border="2px solid red";
+    }
+    else if(regx.test(pass)==false){
+        errorNode6.innerHTML="<small>Password should be 6 to 12 characters long Password should have atleast</small>";
+        let ulNode=document.createElement('ul');
+        errorNode6.append(ulNode);
+        ulNode.style.fontSize="10px";
+        let ar=['Capital Letter','Small Letter','Digit','Special Symbol'];
+        for(let val of ar){
+            let liNode=document.createElement('li');
+            liNode.textContent=val;
+            ulNode.append(liNode);
+        }
+        passNode.style.border="2px solid red";
+    }
+    else{
+        passNode.style.border="2px solid green";
     }
 }
 function validate7(){
