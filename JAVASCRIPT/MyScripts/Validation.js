@@ -74,6 +74,13 @@ function validate4(){
         errorNode4.innerHTML="<small>Email is required</small>";
         emailNode.style.border="2px solid red";
     }
+    else if(!email.includes('@') || email.endsWith('@')){
+        errorNode4.innerHTML="<small>Please enter valid email</small>";
+        emailNode.style.border="2px solid red";
+    }
+    else{
+        emailNode.style.border="2px solid green";
+    }
 }
 function validate5(){
     let uname=unameNode.value;
