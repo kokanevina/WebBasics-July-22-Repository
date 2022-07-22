@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .india{
+            background-color: yellow;
+            color: blue;
+        }
+        .spacing{
+            margin: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2 class="india">INDIA</h2>
+        <p>India is my country</p>
+        <p class="india">India is my country</p>
+        <p>India is my country</p>
+        <p class="india">India is my country</p>
+        <div class="india">All indians are my brothers and</div>    
+    </section>
+    <script>
+        let nodeArray=document.getElementsByTagName('p');
+        console.log(nodeArray);
+        let nodeArray2=document.getElementsByClassName('india');
+        console.log(nodeArray2);
+        for(let node of nodeArray2){
+            node.setAttribute('style','font-size:40px; border:4px solid red') // html style attribute
+            //node.setAttribute('class','spacing');  // replace existing class
+
+        }
+    </script>
+
+  
+</body>
+</html>
