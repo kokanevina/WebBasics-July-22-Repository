@@ -6,15 +6,15 @@
     <title>Attribute Access Demo</title>
     <style>
         #sachinimg{
-          height: 100px;
-          width: 100px; 
+         /*  height: 100px;
+          width: 100px;  */
         }
     </style>
 </head>
 <body>
     <button onclick="change()">CHANGE IMAGE</button>
 
-<img id="sachinimg" src="../HTML/MyImages/sachin.jpg" alt="sachin">
+<img id="sachinimg" src="../HTML/MyImages/sachin.jpg" alt="sachin" height="200" width="200">
    <button onclick="zoom()">ZOOM</button>
    <script>
         let imgNode=document.getElementById('sachinimg');
@@ -48,7 +48,7 @@
         imgNode.addEventListener('mouseleave', ()=>{
            scaleOut();
         })
-        /* imgNode.style.transitionDuration="3s"; */
+       imgNode.style.transitionDuration="1s";
         function scaleIn(){     
             imgNode.style.transform="scale(2)";
         }
@@ -57,12 +57,12 @@
         }
         function zoom(){   
             /*height and width attribute must be available for below logic to work*/
-            /* imgNode.height=imgNode.height+10;
-            imgNode.width=imgNode.width+10; */
+
+             imgNode.height=imgNode.height+10;
+             imgNode.width=imgNode.width+10; 
+
             /*if style have height and width then use below logic*/
-            console.log(typeof imgNode.style.height);
-            console.log(imgNode.style.height);
-           
+          
         }
     </script>
 </body>
