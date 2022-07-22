@@ -19,3 +19,5 @@ Filter the array having name Rupa (ignore case)
 Implement remaining methods from  string api which are not covered in session
 
 Implement slice method of array
+
+Implement simple Image slide  using setInterval
