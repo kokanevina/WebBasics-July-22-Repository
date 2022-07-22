@@ -15,7 +15,11 @@ let errorNode7=document.getElementById("error7");
 
 
 function validate1(){
-
+    let fname=fnameNode.value;
+    if(fname===''){
+        errorNode1.innerHTML="<small>First name in required</small>";
+        fnameNode.style.border="2px solid red";
+    }
 }
 function validate2(){
     

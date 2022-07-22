@@ -3,16 +3,15 @@ Can we assign a particular number to any item? Like vanilla is 1 so 1 comes when
 what to do if we want to give random numbers
 
 
-
-target values other than predefined
+target values other than predefined (got the answer)
 
 picture : if source is not getting loaded, it will check next source, img tag in the end
 
-New item added in DL when submit button pressed
+New item added in DL when submit button pressed 
 
 
 Memory Management in Javascript
 
 
-mam what is diff bet dom vs Virtual DOM
+how to access height and width (given with style) of image  in javascript (got the answer)
 
