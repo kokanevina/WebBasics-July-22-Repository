@@ -14,4 +14,3 @@ Memory Management in Javascript
 
 
 how to access height and width (given with style) of image  in javascript (got the answer)
-
