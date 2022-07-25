@@ -1,6 +1,6 @@
-Can we assign a particular number to any item? Like vanilla is 1 so 1 comes whenever there is vanilla
+Can we assign a particular number to any item? Like vanilla is 1 so 1 comes whenever there is vanilla : done
 
-what to do if we want to give random numbers
+what to do if we want to give random numbers : done
 
 
 target values other than predefined (got the answer)

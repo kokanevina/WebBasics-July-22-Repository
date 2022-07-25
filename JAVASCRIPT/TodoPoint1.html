@@ -10,17 +10,17 @@
    
 </body>
 <script>
-    let compareArray=['vanilla','butterscotch','strawberry', 'mango','oreo','coconut'];
-    let flavours=['vanilla', 'butterscotch', 'strawberry','vanilla', 'mango', 
-    'oreo', 'coconut','butterscotch','mango'];
+    let flavours=['vanilla', 'butterscotch', 'strawberry','vanilla', 'mango','oreo', 'vanilla','coconut','butterscotch','mango'];
+    let mySet=new Set(flavours);
+    let myArray=Array.from(mySet);
+    console.log(myArray);
     let serialNums=new Array(flavours.length);
     let counter=1;
-    for(let i=0;i<compareArray.length;i++){
+    for(let i=0;i<myArray.length;i++){
         for(let j=0;j<flavours.length;j++){
-            if(flavours[i]===flavours[j])
+            if(myArray[i]===flavours[j])
                 serialNums[j]=counter;
         }
-        if(i==2) break;
         counter++;
     } 
     console.log(flavours);
