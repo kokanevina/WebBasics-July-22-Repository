@@ -12,6 +12,7 @@ let errorNode4=document.getElementById("error4");
 let errorNode5=document.getElementById("error5");
 let errorNode6=document.getElementById("error6");
 let errorNode7=document.getElementById("error7");
+let checkboxNode=document.getElementById("check");
 let array=[errorNode1,errorNode2,errorNode3,errorNode4,errorNode5,errorNode6,errorNode7];
 for(let node of array){
   node.style.color="red";
@@ -169,4 +170,13 @@ function validate7(){
         c_passNode.style.border="2px solid green";
         return true;
     }
+}
+
+
+function showPassword(){
+ if(checkboxNode.checked){
+    passNode.type="text";
+ }else{
+    passNode.type="password";
+ }
 }
