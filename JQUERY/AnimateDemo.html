@@ -16,9 +16,14 @@
     <script>
         $(document).ready(function(){
             $('[name="myname"]').focus(function(){
-                $(this).animate({height:'30px', width:'150px', border:'5px solid blue'}); // default timer: 400ms
+                // animate only works with numeric values, non numeric properties does not get applied
+                          // default timer: 400ms, default easing is swing
+                $(this).animate({height:'30px', width:'150px', border:'5px solid blue', backgroundColor:'yellow'}); 
               //  $(this).animate({height:'30px', width:'150px', border:'5px solid blue'},1200); 
-              /*   $(this).animate({height:'30px', width:'150px', border:'5px solid blue'},1200,function(){
+
+                // $(this).animate({height:'30px', width:'150px', border:'5px solid blue'},1200, linear);   
+
+              /*   $(this).animate({height:'30px', width:'150px', border:'5px solid blue'},1200,linear,function(){
                     $(this).fadeTo(500,0.5);
                 });  */
             });
